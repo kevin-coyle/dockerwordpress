@@ -1,6 +1,6 @@
-#Multi Container Drupal 7
+#Multi Container Wordpress
 This repo cotains a Dockerfile and docker-compose file which should help with
-Drupal 7 contrib and custom development.
+Wordpress development.
 
 ##Getting started
 To begin you will need
@@ -26,4 +26,4 @@ To make it easy you can always add a bash alias to the above command so that acc
 
 ###Database Settings
 
-By default the script creates a database called `drupal7` with the root username and root for the password. (please note this does not intend to be production safe).
+By default the script creates a database called `wordpress` with the root username and root for the password. (please note this does not intend to be production safe).

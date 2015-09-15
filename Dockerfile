@@ -4,11 +4,8 @@ RUN apt-get update -y
 RUN apt-get install git-core -y
 RUN apt-get install curl -y
 
-ADD ./scripts/install_drush.sh /scripts/install_drush.sh
-RUN /scripts/install_drush.sh
+ADD ./scripts/install_wpcli.sh /scripts/install_wpcli.sh
+RUN /scripts/install_wpcli.sh
 
-ADD ./scripts/install_drupal.sh /scripts/install_drupal.sh
-RUN /scripts/install_drupal.sh
-
-ADD ./scripts/install_drupal_console.sh /scripts/install_drupal_console.sh
-RUN /scripts/install_drupal_console.sh
+ADD ./scripts/install_wordpress.sh /scripts/install_wordpress.sh
+RUN /scripts/install_wordpress.sh

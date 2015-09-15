@@ -1,8 +1,8 @@
 web:
-  image: kevincoyle/drupal8
+  build: .
   volumes:
-    - "./modules:/app/sites/all/modules"
-    - "./themes:/app/sites/all/themes"
+    - "./themes:/app/wp-content/themes"
+    - "./plugins:/app/wp-content/plugins"
   ports:
     - "8082:80"
   environment:
@@ -13,4 +13,4 @@ db:
   image: mysql
   environment:
     - MYSQL_ROOT_PASSWORD=root
-    - MYSQL_DATABASE=drupal7
+    - MYSQL_DATABASE=wordpress
